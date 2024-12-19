@@ -1,0 +1,192 @@
+/* style.css */
+
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #1f1f1f;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #f0f0f0;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  /* Section Hero */
+  .hero {
+    padding: 00px 00px;
+    background: linear-gradient(180deg, rgb(0, 0, 0), #121212);
+    color: #fff;
+  }
+  
+  .hero .image img {
+    max-width: 100%;
+    height: auto;
+    border: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .description h1 {
+    padding-left: 20px;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    margin-top: -400px;
+  }
+  
+  .hero .description p {
+    padding-left: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .download-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .hero .download-btn:hover {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+  }
+  
+  /* Section Frames */
+  .frames {
+    margin-top: 220px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .frames h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .frames .grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .frames .frame {
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .frames .frame:hover {
+    transform: scale(1.05);
+    border-color: #f00;
+  }
+  
+  .frames .play-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .frames .play-btn:hover {
+    background-color: #c00000;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .about {
+    margin-bottom: 20px;
+  }
+  
+  footer .about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer .about p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  footer .socials a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  footer .socials .discord {
+    color: #7289da;
+  }
+  
+  footer .socials .discord:hover {
+    color: #5a73b5;
+  }
+  
+  footer .socials .youtube {
+    color: #f00;
+  }
+  
+  footer .socials .youtube:hover {
+    color: #c00000;
+  }
+  
+  footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #888;
+  }
+  
