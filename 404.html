@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Perdu dans l'anarchy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #111;
+            color: #f00;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            border: 3px dashed #f00;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        h1 {
+            font-size: 10rem;
+            margin: 0;
+            text-shadow: 0 0 20px #f00, 0 0 30px #f00;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 10px 0 20px;
+            color: #fff;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: transparent;
+            text-decoration: none;
+            border: 2px solid #f00;
+            transition: all 0.3s;
+        }
+        a:hover {
+            background-color: #f00;
+            color: #000;
+        }
+        .glitch {
+            position: relative;
+            display: inline-block;
+        }
+        .glitch:before,
+        .glitch:after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            color: #0f0;
+            z-index: -1;
+            animation: glitch 1s infinite;
+        }
+        .glitch:after {
+            color: #00f;
+            z-index: -2;
+            animation: glitch 1s infinite reverse;
+        }
+        @keyframes glitch {
+            0% {
+                transform: translate(2px, -2px);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                transform: translate(2px, 2px);
+            }
+            80% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(2px, -2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch" data-text="404">404</h1>
+        <h2>Tu es perdu dans l'anarchy...</h2>
+        <p>Cette page n'existe pas, tout comme les règles ici. Bonne chance pour retrouver ton chemin !</p>
+        <a href="https://rocknite-studio.github.io/pas.l.anarchy/">Revenir à la "civilisation"</a>
+    </div>
+</body>
+</html>
